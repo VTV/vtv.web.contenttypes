@@ -21,7 +21,13 @@ Functional test:
     >>> browser.getLink('Program').click()
     >>> browser.getControl('Title').value = 'Dossier'
     >>> browser.getControl('Description').value = 'Acontecimientos en pleno desarrollo.'
-    >>> browser.getControl('API URL').value = 'http://multimedia.vtv.gov.ve//programas/dossier/'
+    >>> from cStringIO import StringIO
+    >>> from zope.app.file.tests.test_image import zptlogo
+    >>> ctrl = browser.getControl(name='form.widgets.image')
+    >>> ctrl.add_file(StringIO(zptlogo), 'image/gif', 'zpt.gif')
+    >>> ctrl = browser.getControl(name='form.widgets.thumbnail')
+    >>> ctrl.add_file(StringIO(zptlogo), 'image/gif', 'zpt.gif')
+    >>> browser.getControl('API URL').value = 'http://multimedia.vtv.gov.ve/programas/dossier/'
     >>> browser.getControl('Save').click()
     >>> 'Item created' in browser.contents
     True
