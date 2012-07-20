@@ -6,7 +6,7 @@
  <!-- Basic metadata -->
  <property name="title" i18n:translate="">Program</property>
  <property name="description" i18n:translate="">A program</property>
- <property name="icon_expr">string:${portal_url}/program_icon.png</property>
+ <property name="content_icon">++resource++vtv.web.contenttypes/program_icon.png</property>
  <property name="allow_discussion">False</property>
  <property name="global_allow">True</property>
  <property name="filter_content_types">True</property>
