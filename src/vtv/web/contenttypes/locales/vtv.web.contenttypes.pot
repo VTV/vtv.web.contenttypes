@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-07-20 20:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: vtv/web/contenttypes/profiles/default/types/vtv.web.program.xml
+msgid "A program"
+msgstr ""
+
+#: vtv/web/contenttypes/program.py:30
+msgid "API URL"
+msgstr ""
+
+#: vtv/web/contenttypes/program.py:16
+msgid "Image"
+msgstr ""
+
+#: vtv/web/contenttypes/profiles/default/types/vtv.web.program.xml
+msgid "Program"
+msgstr ""
+
+#: vtv/web/contenttypes/program.py:23
+msgid "Thumbnail"
+msgstr ""
+
+#. Default: "URL to access the list of recent shows."
+#: vtv/web/contenttypes/program.py:31
+msgid "help_api_url"
+msgstr ""
+
+#: vtv/web/contenttypes/program.py:17
+msgid "help_image"
+msgstr ""
+
+#: vtv/web/contenttypes/program.py:24
+msgid "help_thumbnail"
+msgstr ""
+

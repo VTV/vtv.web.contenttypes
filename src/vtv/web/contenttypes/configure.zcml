@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="vtv.web.contenttypes">
+
+    <includeDependencies package="." />
+    <i18n:registerTranslations directory="locales" />
+
+    <permission
+        id="vtv.web.contenttypes.AddProgram"
+        title="vtv.web.contenttypes: Add program"
+        />
+
+    <grok:grok package="." />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="vtv.web.contenttypes"
+        description="Content types for Venezolana de Televisión web site."
+        directory="profiles/default"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="vtv.web.contenttypes uninstall"
+        directory="profiles/uninstall"
+        description="Uninstall profile for the vtv.web.contenttypes package."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+</configure>
