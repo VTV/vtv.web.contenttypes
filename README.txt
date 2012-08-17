@@ -2,23 +2,26 @@
 vtv.web.contenttypes
 ********************
 
-.. contents:: Table of Contents
+.. contents:: Tabla de contenidos
 
-Life, the Universe, and Everything
-----------------------------------
+La vida, el universo y todo lo demás
+------------------------------------
 
-Content types for Venezolana de Televisión web site.
+Tipos de contenido para el sitio web de Venezolana de Televisión.
 
-Don't Panic
------------
+No se asuste
+------------
 
-This package contains a content type called Program, that is used to relate TV
-shows on the cover page of Venezolana de Televisión web site.
+Este paquete contiene un tipo de contenido llamado Programa que se usa para
+describir los programas de de Venezolana de Televisión mostrados en la portada
+del sitio.
 
-Mostly Harmless
----------------
+Fundamentalmente inofensivo
+---------------------------
 
-Have an idea? Found a bug? Let us know by `opening a support ticket`_.
+.. image:: https://secure.travis-ci.org/VTV/vtv.web.contenttypes.png
+    :target: http://travis-ci.org/VTV/vtv.web.contenttypes
 
-.. _`opening a support ticket`: https://github.com/VTV/vtv.web.contenttypes/issues
+¿Tiene una idea? ¿Encontró un problema? Háganoslo saber `abriendo un ticket de soporte`_.
 
+.. _`abriendo un ticket de soporte`: https://github.com/VTV/vtv.web.contenttypes/issues
