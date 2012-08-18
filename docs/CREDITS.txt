@@ -5,6 +5,7 @@ vtv.web.contenttypes would not have been possible without the contribution of
 the following people:
 
 - Héctor Velarde
+- Gonzalo Almeida
+- Franco Pellegrini
 
-Development sponsored by Open Multimedia.
-
+Development sponsored by Venezolana de Televisión.

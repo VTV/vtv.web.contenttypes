@@ -13,7 +13,7 @@ No se asuste
 ------------
 
 Este paquete contiene un tipo de contenido llamado Programa que se usa para
-describir los programas de de Venezolana de Televisión mostrados en la portada
+describir los programas de Venezolana de Televisión mostrados en la portada
 del sitio.
 
 Fundamentalmente inofensivo
