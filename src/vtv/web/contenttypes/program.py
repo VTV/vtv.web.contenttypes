@@ -2,6 +2,8 @@
 
 from zope import schema
 
+from plone.dexterity.content import Item
+
 from plone.directives import dexterity, form
 from plone.namedfile.field import NamedBlobImage
 
@@ -34,5 +36,5 @@ class IProgram(form.Schema):
         )
 
 
-class Program(dexterity.Item):
+class Program(Item):
     pass

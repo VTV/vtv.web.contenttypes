@@ -8,6 +8,11 @@ from zope.component import queryUtility
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import setRoles
 
+from plone.app.content.interfaces import INameFromTitle
+
+from plone.app.dexterity.behaviors.exclfromnav import IExcludeFromNavigation
+from plone.app.dexterity.behaviors.metadata import IBasic
+
 from plone.app.referenceablebehavior.referenceable import IReferenceable
 from plone.dexterity.interfaces import IDexterityFTI
 from plone.uuid.interfaces import IAttributeUUID
@@ -60,3 +65,15 @@ class IntegrationTest(unittest.TestCase):
     def test_program_selectable_as_folder_default_view(self):
         self.folder.setDefaultPage('p1')
         self.assertEqual(self.folder.default_page, 'p1')
+
+    def test_provided_behaviors(self):
+        fti = queryUtility(IDexterityFTI, name='vtv.web.program')
+
+        self.assertEqual(len(fti.behaviors), 4)
+
+        for interface in [INameFromTitle, 
+                          IExcludeFromNavigation, 
+                          IBasic, 
+                          IReferenceable]:
+
+            self.assertTrue(interface.__identifier__ in fti.behaviors)
